@@ -15,6 +15,7 @@
   "module": "esm/index.js",
   "types": "esm/index.d.ts",
   "scripts": {
+    "prepare": "yarn build",
     "prebuild": "yarn run clean",
     "build": "rollup -c rollup.config.js",
     "clean": "shx rm -rf ./cjs ./esm",
